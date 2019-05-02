@@ -21,6 +21,7 @@ public class ApiAsyncTask extends AsyncTask<Context,AsyncTaskDelegate,String> {
 
     private static MyApi jokeapiService = null;
     private Context context;
+    public String joke;
 
     @Override
     protected void onPostExecute(String s) {
@@ -56,9 +57,10 @@ public class ApiAsyncTask extends AsyncTask<Context,AsyncTaskDelegate,String> {
         context = contexts[0];
 
         try {
-            //return jokeapiService.getJoke
-            return jokeapiService.getJoke().execute().getData();
+            joke = jokeapiService.getJoke().execute().getData();
+            return joke;
         } catch (IOException e) {
+            joke = "";
             return e.getMessage();
         }
 

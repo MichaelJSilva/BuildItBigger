@@ -11,8 +11,11 @@ import android.widget.Toast;
 import Tasks.ApiAsyncTask;
 import interfaces.AsyncTaskDelegate;
 
+import com.udacity.gradle.builditbigger.R;
 
 public class MainActivity extends AppCompatActivity implements AsyncTaskDelegate {
+
+    String joke = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +49,6 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskDelegate
     public void tellJoke(View view) {
 
         new ApiAsyncTask().execute(this);
-
-
 
     }
 
