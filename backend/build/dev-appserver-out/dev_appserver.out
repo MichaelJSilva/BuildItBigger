@@ -1,0 +1,21 @@
+mai 01, 2019 10:37:39 PM java.util.prefs.WindowsPreferences <init>
+ADVERT?NCIA: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+mai 01, 2019 10:37:39 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFORMA??ES: Overwriting system property key 'java.util.logging.config.file', value 'D:\TOOLS\cloudSDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'D:\Projetos_android\Final_Gradle\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+2019-05-01 22:37:39.517:INFO::main: Logging initialized @639ms to org.eclipse.jetty.util.log.StdErrLog
+2019-05-01 22:37:39.584:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+mai 02, 2019 1:37:40 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+ADVERT?NCIA: Your working directory, (D:\Projetos_android\Final_Gradle\backend) is not equal to your 
+web application root (D:\Projetos_android\Final_Gradle\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+2019-05-01 22:37:40.426:INFO:oejs.Server:main: jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_152-release-1343-b01
+2019-05-01 22:37:41.578:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@2ab4bc72{/,file:///D:/Projetos_android/Final_Gradle/backend/build/exploded-backend/,AVAILABLE}{D:\Projetos_android\Final_Gradle\backend\build\exploded-backend}
+2019-05-01 22:37:41.579:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2019-05-01 22:37:41.579:INFO:oejs.session:main: node0 Scavenging disabled
+2019-05-01 22:37:41.608:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@4b8d604b{HTTP/1.1,[http/1.1]}{localhost:8080}
+2019-05-01 22:37:41.609:INFO:oejs.Server:main: Started @2731ms
+mai 02, 2019 1:37:41 AM com.google.appengine.tools.development.AbstractModule startup
+INFORMA??ES: Module instance default is running at http://localhost:8080/
+mai 02, 2019 1:37:41 AM com.google.appengine.tools.development.AbstractModule startup
+INFORMA??ES: The admin console is running at http://localhost:8080/_ah/admin
