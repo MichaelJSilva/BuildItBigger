@@ -47,13 +47,7 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskDelegate
 
         new ApiAsyncTask().execute(this);
 
-//        Joker joker = new Joker();
-//
-//        // Create Intent to launch JokeFactory Activity
-//        Intent intent = new Intent(this, DisplayJokeActivity.class);
-//        // Put the string in the envelope
-//        intent.putExtra(getString(R.string.JokeTag), joker.tellJoke());
-//        startActivity(intent);
+
 
     }
 

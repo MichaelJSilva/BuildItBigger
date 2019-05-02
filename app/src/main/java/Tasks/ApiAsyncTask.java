@@ -1,9 +1,11 @@
 package Tasks;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.example.androidjokelib.JokeActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
@@ -22,6 +24,14 @@ public class ApiAsyncTask extends AsyncTask<Context,AsyncTaskDelegate,String> {
 
     @Override
     protected void onPostExecute(String s) {
+
+
+        Intent intent = new Intent(context, JokeActivity.class);
+        // Put the string in the envelope
+        intent.putExtra(JokeActivity.JOKE_TAG,s);
+        context.startActivity(intent);
+
+
         Toast.makeText(context, s, Toast.LENGTH_LONG).show();
     }
 
