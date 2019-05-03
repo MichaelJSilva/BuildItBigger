@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.androidjokelib.JokeActivity;
+
 import Tasks.ApiAsyncTask;
 import interfaces.AsyncTaskDelegate;
 
@@ -45,15 +47,20 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskDelegate
 
     public void tellJoke(View view) {
 
-        new ApiAsyncTask().execute(this);
-
-
+        new ApiAsyncTask(this,this).execute(this);
 
     }
 
 
     @Override
-    public void afterPost() {
+    public void afterPost(String result) {
+
+        Intent intent = new Intent(this, JokeActivity.class);
+        // Put the string in the envelope
+        intent.putExtra(JokeActivity.JOKE_TAG,result);
+
+        this.startActivity(intent);
+
 
     }
 }

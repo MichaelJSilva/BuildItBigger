@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface AsyncTaskDelegate {
-    void afterPost();
+    void afterPost(String result);
 }

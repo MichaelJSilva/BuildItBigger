@@ -40,15 +40,6 @@
         android:onClick="tellJoke"
         android:text="@string/button_text" />
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="70dp"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id" />
 
 
 </LinearLayout>
